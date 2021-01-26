@@ -24,7 +24,7 @@ public class WurstplusAutoEz extends WurstplusHack {
 
         this.name = "Auto Ez";
         this.tag = "AutoEz";
-        this.description = "you just got nae nae'd by wurst+... 2";
+        this.description = "you just got nae nae'd by wurst+... 3";
     }
 
     int delay_count = 0;
@@ -108,10 +108,10 @@ public class WurstplusAutoEz extends WurstplusHack {
         if (custom.get_value(true)) {
             message += WurstplusEzMessageUtil.get_message().replace("[", "").replace("]", "");
         } else {
-            message += "you just got nae nae'd by wurst+2";
+            message += "you just got nae nae'd by wurst+3";
         }
         if (discord.get_value(true)) {
-            message += " - discord.gg/wurst";
+            message += " - https://discord.gg/Ksg6aScpwW";
         }
         mc.player.connection.sendPacket(new CPacketChatMessage(message));
     }
